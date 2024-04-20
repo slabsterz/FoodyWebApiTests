@@ -48,13 +48,15 @@ namespace FoodyWebApi
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                var responseObject = JsonSerializer.Deserialize<JsonElement>(response.Content);
-                var token = responseObject.GetProperty("accessToken").GetString();
+                var responseJson = JsonSerializer.Deserialize<AuthResponse>(response.Content);
+                var token = responseJson.AccessToken;
+                
 
                 if (string.IsNullOrWhiteSpace(token))
                 {
                     throw new InvalidOperationException("Access Token is null or empty");
                 }
+
                 return token;
             }
             else

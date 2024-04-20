@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FoodyWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae6f33cc45f1cf7a818ec5ee6b93ee952c278798")]
 [assembly: System.Reflection.AssemblyProductAttribute("FoodyWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FoodyWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
